@@ -12,14 +12,14 @@
         android:layout_height="40dp"
         android:background="#F1F2F7"
         />
+
     <ImageView
         android:id="@+id/referenceImageView2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/web"
-        android:scaleType="center"
         android:layout_below="@+id/viewTop3"
-        />
+        android:scaleType="center"
+        android:src="@drawable/web" />
 
     <TextView
         android:id="@+id/titleTextView2"
@@ -27,23 +27,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/referenceImageView2"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/cairo_semibold"
         android:text="@string/web"
         android:textAlignment="center"
-        android:textSize="26sp"
         android:textColor="@color/black"
-        android:fontFamily="@font/cairo_semibold"
-        />
+        android:textSize="26sp" />
 
     <TextView
         android:id="@+id/descriptionTextView2"
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:layout_below="@+id/titleTextView2"
-        android:text="@string/webDescription"
-        android:textSize="18sp"
         android:fontFamily="@font/cairo_regular"
         android:padding="10dp"
-        />
+        android:text="@string/webDescription"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button1"

@@ -14,7 +14,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button nextPage = findViewById(R.id.countinueButton);
 
+        nextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MainActivity2.class));
+            }
+        });
 
     }
 }

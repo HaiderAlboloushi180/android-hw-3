@@ -15,5 +15,20 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
+        Bundle bundle = getIntent().getExtras();
+
+        TextView trackTitleTextView = findViewById(R.id.titleTextView2);
+        TextView trackDescriptionTextView = findViewById(R.id.descriptionTextView2);
+        ImageView trackImageView = findViewById(R.id.referenceImageView2);
+
+        String trackTitleString = bundle.getString("TRACKNAME");
+        String trackDescriptionString = bundle.getString("TRACKDESCRIPTION");
+        int trackImage = bundle.getInt("TRACKIMAGE");
+
+        trackTitleTextView.setText(trackTitleString);
+        trackDescriptionTextView.setText(trackDescriptionString);
+        trackImageView.setImageResource(trackImage);
+
     }
 }
